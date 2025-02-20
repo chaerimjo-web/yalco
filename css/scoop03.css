@@ -1,0 +1,33 @@
+*{
+	font-size: 18px;
+}
+
+input[type="text"]:focus{
+	outline: 2px solid darkblue;
+}
+
+input:required{
+	border: 2px solid orange;
+}
+
+input[type="email"]:enabled{
+	outline: 2px solid red;
+}
+
+input[type=email]:valid{
+	outline: 2px solid green;
+}
+
+[class*="focus"]:focus{
+	outline: 2px solid darkorange;
+}
+
+[class="tab-focus"]:focus,
+[class="no-focus"]:focus{
+	outline: none;
+}
+
+[class="tab-cocus"]:focus-visible{
+	outline: 2px solid skyblue;
+}
+

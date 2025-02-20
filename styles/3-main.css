@@ -1,0 +1,23 @@
+#about{
+	text-align: center;
+	background: var(--color-light-bg);
+}
+.section{
+	padding: 64px 16px;
+}
+.section__tag{
+	font-size: var(--font-size-tag);
+	color: var(--color-sub);
+}
+.section__title{
+	font-size: var(--font-size-title);
+	color: var(--color-text);
+	font-weight: bold;
+}
+
+@media (min-width: 769px) {
+	main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}

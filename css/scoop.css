@@ -1,0 +1,24 @@
+*{
+	font-size: 24px;
+}
+
+input[disabled]+label {
+	color: lightgray;
+	text-decoration: line-through;
+}
+
+span[class*="item"]{
+	text-decoration: underline;
+}
+
+span[class^="fruit"]{
+	color: orange;
+}
+
+span[class^="vege"]{
+	color: blue;
+}
+ 
+span[class$="-1"]{
+	font-weight: bold;
+}

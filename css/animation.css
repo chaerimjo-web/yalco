@@ -1,0 +1,36 @@
+button._1:hover{
+	background: purple;
+	border-radius: 32px;
+}
+button._1{
+	transition: 500ms;
+}
+
+@keyframes anim{
+	from{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+button._2:hover{
+	animation: anim 500ms;
+}
+
+#loading>div{
+	transform: skew(-15deg);
+	animation: loading 4s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes loading{
+	from{
+		left: -600px;
+	}
+	to{
+		left: 0;
+	}
+}

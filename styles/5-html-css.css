@@ -1,0 +1,76 @@
+.html-css{
+	margin: 56px 0;
+	gap: 56px;
+}
+.section{
+	text-align: center;
+}
+.html-css__title{
+	font-size: var(--font-size-subtitle);
+	font-weight: 100;
+}
+.html-css__content{
+	text-align: left;
+}
+._html em{
+	color: #F16528;
+}
+._css em{
+	color: rgb(41, 101, 241);
+}
+.html-css__desc{
+	margin-top: 28px;
+	font-size: var(--font-size-text);
+}
+.html-css__desc strong{
+	font-weight: bold;
+}
+.html-css__spec{
+	margin-top: 25px;
+}
+.html-css__spec dd{
+	font-size: var(--font-size-larger);
+	margin-right: 24px;
+	color: var(--color-lighter);
+}
+.html-css__thumb{
+	position: relative;
+}
+
+.html-css._html{
+	display: inline-flex;
+	/* inline요소여야지만 로고 크기가 먹힌다. */
+}
+@media (max-width: 768px) {
+	.html-css{
+		flex-direction: column;
+	}
+
+	.html-css__logo{
+		width: 50%;
+	}
+	#html{
+		border-bottom: 4px solid var(--color-light-bg);
+	}
+	.html-css__content{
+		display: inline-block;
+		text-align: center;
+	}
+	.html-css__title {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+@media (min-width: 769px) {
+	.html-css__logo{
+		width: 144px;
+	}
+	.html-css{
+		display: inline-flex;
+	}
+	
+	#html{
+		border-right: 4px solid var(--color-light-bg);
+	}
+}

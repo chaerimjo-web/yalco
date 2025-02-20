@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h3>텍스트 관련 인풋 타입</h3>
+	<label for="text" >text</label><br>
+	<input type="text" 
+		id="text" placeholder="5자 이하" maxlength="5"
+	>
+
+	<br></br>
+	
+	<label for="pass">password</label><br>
+	<input type="password" id="pass" minlength="4" placeholder="4자 이상">
+	
+	<br><br>
+	
+	<label for="search">search</label> <br>
+	<input type="search" id="search">
+
+	<br><br>
+
+	<label for="tel">tel</label><br>
+	<input type="tel" id="tel">
+
+	<br><br>
+
+	<button type="submit">제출</button>
+	<button type="reset">초기화</button>
+	<hr>
+	<h3>숫자 관련 인풋 타입</h3>
+	<form action="#">
+		<label for="number">number</label><br>
+		<input type="number" id="number" min="5" max="10">
+	
+		<label for="range">range</label><br>
+		<input type="range" id="range" min="0" max="100" step="10">
+	
+		<label for="date">date</label><br>
+		<input type="date" id="date" min="2020-07-10" max="2024-07-10">
+	
+		<br><br>
+	
+		<label for="file">file</label><br>
+		<input type="file" id="file" accept="image/jpg" multiple>
+	</form>
+	<hr>
+	<h3>인풋 요소 공통(대부분) 속성</h3>
+	<form action="#">
+		<label for="value">value</label><br>
+		<input type="text" id="value" value="지정됨">
+
+		<br><br>
+
+		<label for="autofocus">autofocus</label><br>
+		<input type="text" id="autofocus" autofocus>
+
+		<br><br>
+
+		<label for="readonly">readonly</label><br>
+		<input type="text" id="readonly" value="읽기만 가능, 전송됨" readonly>
+
+		<br><br>
+
+		<label for="required">required</label><br>
+		<input type="text" id="required" value="필수입력" required>
+
+		<br><br>
+
+		<input type="radio" id="apple">
+		<label for="apple">사과</label>
+		<input type="radio" id="grap">
+		<label for="grap">포도</label>
+		<input type="radio" id="orange" disabled>
+		<label for="orange">오렌지(품절)</label>
+
+		<br><br>
+
+		<button type="submit">제출</button>
+	</form>
+	<h3>이상적인 수치에 따라 색상이 변한다. / meter 태그</h3>
+	<img src="img/meter_tag.png" alt="">
+	<p>나쁜 값</p>
+	<meter value="20" min="0" max="100" low="33" high="67" optimum="90"></meter>
+	<p>아쉬운 값</p>
+	<meter value="50" min="0" max="100" low="33" high="67" optimum="90"></meter>
+	<p>가장 좋은 값</p>
+	<meter value="90" min="0" max="100" low="33" high="67" optimum="90"></meter>
+
+</body>
+</html>

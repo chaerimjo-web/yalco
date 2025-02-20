@@ -1,0 +1,14 @@
+input[type=radio]:disabled+label{
+	color: lightgray;
+	text-decoration: line-through;
+}
+
+input[type=radio]:enabled+label{
+	text-decoration: underline;
+}
+
+input[type=radio]:checked+label{
+	color: salmon;
+	font-weight: bold;
+}
+
