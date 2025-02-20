@@ -7,7 +7,7 @@
 .curriculum{
 	position: relative;
 }
-.section__title{
+#curriculum h1{
 	color: #fff;
 }
 .curriculum__list{
