@@ -90,4 +90,36 @@
 		background: rgba(255, 255, 255, 0.1);
 		top: 70px;
 	}
+	.curriculum__progress::after{
+		display: inline-block;
+		content: '';
+		position: absolute;
+		left: 0; top: 0; width: 0;
+		background: var(--color-sub);
+		height: 8px;
+		transition: 1s;
+	}
+	.curriculum__list li:hover::before{
+		background: var(--color-sub);
+	}
+	.curriculum__list li:nth-child(2):hover
+	~ .curriculum__progress::after{
+		width: 200px;
+	}
+	.curriculum__list li:nth-child(3):hover
+	~ .curriculum__progress::after{
+		width: 400px;
+	}
+	.curriculum__list li:nth-child(4):hover
+	~ .curriculum__progress::after{
+		width: 600px;
+	}
+	.curriculum__list li:nth-child(5):hover
+	~ .curriculum__progress::after{
+		width: 800px;
+	}
+	.curriculum__list li:nth-child(6):hover
+	~ .curriculum__progress::after{
+		width: 1000px;
+	}
 }
