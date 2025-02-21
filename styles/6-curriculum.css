@@ -6,6 +6,7 @@
 }
 .curriculum{
 	position: relative;
+	display: inline-block;
 }
 #curriculum h1{
 	color: #fff;
@@ -53,6 +54,14 @@
 	.curriculum__list li span{
 		margin-left: 1.6em;
 	}
+  .curriculum__progress {
+    top: 108px;
+    left: 12px;
+    width: 0px;
+    height: 500px;
+    border-left: 6px dotted white;
+    transform: skewY(-30deg);
+  }
 }
 
 @media (min-width: 769px) {
@@ -85,7 +94,7 @@
 	}
 	.curriculum__progress{
 		width: 1000px;
-		left: 56px;
+		/* left: 56px; */
 		height: 8px;
 		background: rgba(255, 255, 255, 0.1);
 		top: 70px;
