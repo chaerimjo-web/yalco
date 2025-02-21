@@ -1,6 +1,3 @@
-body{
-	height: 500vh;
-}
 .header{
 	display: inline-flex;
 	background: var(--color-main);
