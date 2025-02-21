@@ -1,12 +1,191 @@
 #contact{
 	grid-column: 1/-1;
+	background: var(--color-light-bg);
+	padding: 64px 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.contact{
+	margin-top: 48px;
+}
+/* .contact__tab{
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: var(--font-size-text);
+} */
+.contact__tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--font-size-larger);
+}
+.contact__slides{
+	/* margin: 1.6em 0; */
+	/* width: 95vw; */
+	overflow: hidden;
+	/* vw와 vh 구분을 명확히 */
+}
+.contact__slide-con{
+	display: flex;
+	width: 200vw;
+	transition: margin-left 500ms;
+}
+.contact__slide{
+	width: 100vw;
+}
+#ct_1:checked ~ .contact__slides .contact__slide-con{
+	margin-left: 0;
+}
+#ct_2:checked ~ .contact__slides .contact__slide-con{
+	margin-left: -100vw;
+}
+.contact__contacts{
+	border-spacing: 3em 1em;
+	margin: 0 auto;
+}
+.contact__contacts img{
+	width: 32px;
+	height: 32px;
+}
+.contact__contacts th{
+	font-weight: bold;
+	color: var(--color-dark);
+	text-align: right;
+	padding: 1px 54px 1px 1px;
+	border-right: 4px solid var(--color-light-bd);
+}
+tr:first-child td img{
+	vertical-align: middle;
 }
 address{
 	display: inline-block;
 	/* text-align: center; */
 }
+.contact__leave{
+	display: inline-flex;
+	margin-top: 1em;
+	gap: 8px;
+}
+input[type=radio] {
+  all: unset;
+  display: inline-block;
+  padding: 0.8em 4em;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type=radio]:checked{
+	background: var(--color-main);
+	color: #fff;
+}
+#ct_1::after{
+	content: "연락처 보기";
+}
+#ct_1{
+	border-radius: 12px 0 0 12px;
+}
+#ct_2::after{
+	content: "메시지 남기기";
+}
+#ct_2{
+	border-radius: 0 12px 12px 0;
+}
+.contact__leave textarea::placeholder, 
+.contact__leave input::placeholder{
+	color: var(--color-lighter);
+	font-size: var(--font-size-text);
+}
+.contact__leave textarea{
+	resize: none;
+	padding: 10px;
+	
+}
+.contact__leave input{
+	padding: 0 10px;
+	height: 48px;
+	line-height: 48px;
+}
+.contact__leave textarea,
+.contact__leave input{
+	outline: 2px solid var(--color-light-bd);
+	border: none;
+}
+
+.contact__leave textarea:focus,
+.contact__leave input:focus
+{
+	outline: 2px solid var(--color-sub);
+}
+.contact__leave div{
+	display: inline-flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.contact__leave div button{
+	height: 64px;
+	font-size: var(--font-size-larger);
+	color: #fff;
+	border: none;
+	background: var(--color-sub);
+	cursor: pointer;
+	transition: 500ms;
+}
+.contact__leave div button:hover{
+	opacity: .8;
+}
+
 @media (max-width: 768px) {
+	input[type=radio]{
+		padding: 16px 40px;
+	}
+	#ct_1::after{
+		content: "연락처";
+	}
+	#ct_2::after{
+		content: "메시지";
+	}
+	.contact__contacts th{
+		display: none;
+	}
+	.contact__contacts tr{
+		text-align-last: left;
+	}
+	.contact__contacts td{
+		padding: 10px;
+	}
+	.contact__contacts td::before{
+		content: '▶';
+		opacity: .5;
+		margin-right: 18px; 
+		font-size: 0.67em;
+	}
+	.contact__leave{
+		flex-direction: column;
+	}
+	.contact__leave textarea, 
+	.contact__leave input{
+		width: 75vw;
+	}
+	.contact__slides{
+		margin-top: 32px;
+	}
 }
 
 @media (min-width: 769px) {
+	.contact__leave textarea, 
+	.contact__leave input{
+		width: 360px;
+	}
+	.contact__slides{
+		margin: 1.6em 0;
+	}
+	.contact__contacts td{
+		text-align: left;
+	}
+	.contact__leave{
+		display: inline-flex;
+		margin-top: 20px;
+	}
+
 }
